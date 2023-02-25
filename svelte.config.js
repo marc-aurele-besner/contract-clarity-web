@@ -18,6 +18,15 @@ const config = {
 
 				// otherwise fail the build
 				throw new Error(message)
+			},
+			handleMissingId: ({ path, referrer }) => {
+				// ignore deliberate link to shiny 404 page
+				if (path === '/not-found' && referrer === '/blog/how-we-built-our-404-page') {
+					return
+				}
+
+				// otherwise fail the build
+				throw new Error(`Missing id for ${path} referenced from ${referrer}`)
 			}
 		}
 	},
