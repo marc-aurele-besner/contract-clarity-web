@@ -3,14 +3,23 @@
 	"version": "0.0.1",
 	"description": "A web base tool build with Vite and Svelte to understand smart contract in solidity with the power of ChatGPT API",
 	"repository": {
-	  "type": "git",
-	  "url": "git+https://github.com/marc-aurele-besner/contract-clarity-web.git"
+		"type": "git",
+		"url": "git+https://github.com/marc-aurele-besner/contract-clarity-web.git"
 	},
-	"keywords": ["svelte", "sveltekit", "vite", "openai", "chatgpt", "smart contract", "solidity", "ethereum"],
-    "author": "Marc-Aurele Besner <82244926+marc-aurele-besner@users.noreply.github.com>",
+	"keywords": [
+		"svelte",
+		"sveltekit",
+		"vite",
+		"openai",
+		"chatgpt",
+		"smart contract",
+		"solidity",
+		"ethereum"
+	],
+	"author": "Marc-Aurele Besner <82244926+marc-aurele-besner@users.noreply.github.com>",
 	"license": "MIT",
 	"bugs": {
-	  "url": "https://github.com/marc-aurele-besner/contract-clarity-web/issues"
+		"url": "https://github.com/marc-aurele-besner/contract-clarity-web/issues"
 	},
 	"scripts": {
 		"dev": "vite dev",
@@ -21,33 +30,59 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --plugin-search-dir . --write .",
+		"prepare": "husky install"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn format:check",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"lint-staged": {
+		"src/**/*.{js,ts,jsx,tsx}": [
+			"eslint --fix"
+		],
+		"*.json": [
+			"prettier --write"
+		]
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^17.4.4",
+		"@commitlint/config-conventional": "^17.4.4",
 		"@fontsource/fira-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-vercel": "^2.1.1",
-		"@sveltejs/kit": "^1.5.0",
 		"@types/cookie": "^0.5.1",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
+		"eslint-config-standard-with-typescript": "^34.0.0",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-promise": "^6.1.1",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.1.2",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
 		"svelte": "^3.54.0",
 		"svelte-check": "^3.0.1",
 		"tslib": "^2.4.1",
 		"typescript": "^4.9.3",
-		"vite": "^4.0.0",
-		"vitest": "^0.25.3"
+		"vite": "^4.0.0"
 	},
 	"type": "module",
 	"dependencies": {
 		"@auth/core": "^0.5.0",
-		"@auth/sveltekit": "^0.2.2"
+		"@auth/sveltekit": "^0.2.2",
+		"@sveltejs/kit": "^1.8.5",
+		"eslint-plugin-n": "^15.6.1",
+		"vitest": "^0.29.1"
+	},
+	"engines": {
+		"node": "18.x"
 	}
 }
