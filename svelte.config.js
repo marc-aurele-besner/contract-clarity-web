@@ -20,6 +20,8 @@ const config = {
 				throw new Error(message)
 			},
 			handleMissingId: ({ path, referrer }) => {
+				URL.origin = 'https://example.com'
+
 				// ignore deliberate link to shiny 404 page
 				if (path === '/not-found' && referrer === '/blog/how-we-built-our-404-page') {
 					return
