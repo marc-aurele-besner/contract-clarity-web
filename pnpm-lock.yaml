@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@auth/core': ^0.5.0
-  '@auth/sveltekit': ^0.2.2
+  '@auth/sveltekit': ^0.3.0
   '@commitlint/cli': ^17.4.4
   '@commitlint/config-conventional': ^17.4.4
   '@fontsource/fira-mono': ^4.5.10
@@ -34,7 +34,7 @@ specifiers:
 
 dependencies:
   '@auth/core': 0.5.0
-  '@auth/sveltekit': 0.2.2_bpfyswqgnuhxcur64jazwb3gma
+  '@auth/sveltekit': 0.3.0_bpfyswqgnuhxcur64jazwb3gma
   '@sveltejs/kit': 1.8.5_svelte@3.55.1+vite@4.1.4
   eslint-plugin-n: 15.6.1_eslint@8.34.0
   vitest: 0.29.1
@@ -68,22 +68,6 @@ devDependencies:
 
 packages:
 
-  /@auth/core/0.4.0:
-    resolution: {integrity: sha512-wHVljvVGPmKSjlxQUYZCOL4GGe26YqhT351sA2REE43YskaqRMYh1TVjBxpXcdG8/P8bw2DsHgl+aBEV3P5+KQ==}
-    peerDependencies:
-      nodemailer: ^6.8.0
-    peerDependenciesMeta:
-      nodemailer:
-        optional: true
-    dependencies:
-      '@panva/hkdf': 1.0.4
-      cookie: 0.5.0
-      jose: 4.12.0
-      oauth4webapi: 2.1.0
-      preact: 10.11.3
-      preact-render-to-string: 5.2.3_preact@10.11.3
-    dev: false
-
   /@auth/core/0.5.0:
     resolution: {integrity: sha512-NZu+H1rfYPewBDelZ4nZn7Vd2i6kVSUZQAcrQtEYylbSVVpVglcAfnHDq0FsIFXN1czQk13qdmm+CbIEr/C+iA==}
     peerDependencies:
@@ -100,13 +84,29 @@ packages:
       preact-render-to-string: 5.2.3_preact@10.11.3
     dev: false
 
-  /@auth/sveltekit/0.2.2_bpfyswqgnuhxcur64jazwb3gma:
-    resolution: {integrity: sha512-8PL1120J22RrmsGu8VXTeUvTldSNRqvs/hhEsx9DYswdS5o4umhXsJI5JDbBS3hzpuq7i4LgVEOueW7zQgn9dg==}
+  /@auth/core/0.5.1:
+    resolution: {integrity: sha512-t9z8F7dkuVceKWBmMy1fd2t6H+vfRju/YJ1lm+6RnJ7pNEvX5qMR874wg0+cYbWvyZazLi8fFK/FA6I3D5sSkA==}
+    peerDependencies:
+      nodemailer: ^6.8.0
+    peerDependenciesMeta:
+      nodemailer:
+        optional: true
+    dependencies:
+      '@panva/hkdf': 1.0.4
+      cookie: 0.5.0
+      jose: 4.12.0
+      oauth4webapi: 2.1.0
+      preact: 10.11.3
+      preact-render-to-string: 5.2.3_preact@10.11.3
+    dev: false
+
+  /@auth/sveltekit/0.3.0_bpfyswqgnuhxcur64jazwb3gma:
+    resolution: {integrity: sha512-J9uwaKadzPaQMYec9CYpa9WAjV5EIMEhj4vTuJH6HTp2FJOOJQB5t19WqWv9rYzBVm2rBTPPplQXPI5UKOvg4Q==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
       svelte: ^3.54.0
     dependencies:
-      '@auth/core': 0.4.0
+      '@auth/core': 0.5.1
       '@sveltejs/kit': 1.8.5_svelte@3.55.1+vite@4.1.4
       svelte: 3.55.1
     transitivePeerDependencies:
