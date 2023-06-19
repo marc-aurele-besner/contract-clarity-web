@@ -5,7 +5,7 @@ specifiers:
   '@auth/sveltekit': ^0.3.0
   '@commitlint/cli': ^17.4.4
   '@commitlint/config-conventional': ^17.4.4
-  '@fontsource/fira-mono': ^4.5.10
+  '@fontsource/fira-mono': ^5.0.0
   '@neoconfetti/svelte': ^1.0.0
   '@playwright/test': ^1.28.1
   '@sveltejs/adapter-auto': ^2.0.0
@@ -42,7 +42,7 @@ dependencies:
 devDependencies:
   '@commitlint/cli': 17.4.4
   '@commitlint/config-conventional': 17.4.4
-  '@fontsource/fira-mono': 4.5.10
+  '@fontsource/fira-mono': 5.0.3
   '@neoconfetti/svelte': 1.0.0
   '@playwright/test': 1.31.1
   '@sveltejs/adapter-auto': 2.0.0_@sveltejs+kit@1.8.5
@@ -501,8 +501,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@fontsource/fira-mono/4.5.10:
-    resolution: {integrity: sha512-bxUnRP8xptGRo8YXeY073DSpfK74XpSb0ZyRNpHV9WvLnJ7TwPOjZll8hTMin7zLC6iOp59pDZ8EQDj1gzgAQQ==}
+  /@fontsource/fira-mono/5.0.3:
+    resolution: {integrity: sha512-AN08SykeaFazTC0d0HHOZeQ3jmHyn2Qs5bGEjhxuNp9NjUqg9rL8x+LxrXWdVIo8PBg0xbnkcA3KR6RVvQeRAg==}
     dev: true
 
   /@humanwhocodes/config-array/0.11.8:
