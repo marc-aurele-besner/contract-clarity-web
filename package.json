@@ -80,7 +80,7 @@
 		"@auth/sveltekit": "^0.3.0",
 		"@sveltejs/kit": "^1.8.5",
 		"eslint-plugin-n": "^15.6.1",
-		"vitest": "^0.29.1"
+		"vitest": "^0.34.0"
 	},
 	"engines": {
 		"node": "18.x"
