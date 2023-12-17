@@ -83,6 +83,6 @@
 		"vitest": "^0.29.1"
 	},
 	"engines": {
-		"node": "18.x"
+		"node": "20.x"
 	}
 }
