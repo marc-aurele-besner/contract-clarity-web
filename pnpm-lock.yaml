@@ -11,7 +11,7 @@ specifiers:
   '@sveltejs/adapter-auto': ^2.0.0
   '@sveltejs/adapter-vercel': ^2.1.1
   '@sveltejs/kit': ^1.8.5
-  '@types/cookie': ^0.5.1
+  '@types/cookie': ^0.6.0
   '@typescript-eslint/eslint-plugin': ^5.45.0
   '@typescript-eslint/parser': ^5.45.0
   eslint: ^8.28.0
@@ -47,7 +47,7 @@ devDependencies:
   '@playwright/test': 1.31.1
   '@sveltejs/adapter-auto': 2.0.0_@sveltejs+kit@1.8.5
   '@sveltejs/adapter-vercel': 2.1.1_@sveltejs+kit@1.8.5
-  '@types/cookie': 0.5.1
+  '@types/cookie': 0.6.0
   '@typescript-eslint/eslint-plugin': 5.53.0_3ikpxpdfn6gnt6ib6ikkcexfai
   '@typescript-eslint/parser': 5.53.0_qxbo2xm47qt6fxnlmgbosp4hva
   eslint: 8.34.0
@@ -705,6 +705,10 @@ packages:
 
   /@types/cookie/0.5.1:
     resolution: {integrity: sha512-COUnqfB2+ckwXXSFInsFdOAWQzCCx+a5hq2ruyj+Vjund94RJQd4LG2u9hnvJrTgunKAaax7ancBYlDrNYxA0g==}
+
+  /@types/cookie/0.6.0:
+    resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
+    dev: true
 
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
