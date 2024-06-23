@@ -6,7 +6,7 @@ specifiers:
   '@commitlint/cli': ^17.4.4
   '@commitlint/config-conventional': ^17.4.4
   '@fontsource/fira-mono': ^4.5.10
-  '@neoconfetti/svelte': ^1.0.0
+  '@neoconfetti/svelte': ^2.0.0
   '@playwright/test': ^1.28.1
   '@sveltejs/adapter-auto': ^2.0.0
   '@sveltejs/adapter-vercel': ^2.1.1
@@ -43,7 +43,7 @@ devDependencies:
   '@commitlint/cli': 17.4.4
   '@commitlint/config-conventional': 17.4.4
   '@fontsource/fira-mono': 4.5.10
-  '@neoconfetti/svelte': 1.0.0
+  '@neoconfetti/svelte': 2.2.1
   '@playwright/test': 1.31.1
   '@sveltejs/adapter-auto': 2.0.0_@sveltejs+kit@1.8.5
   '@sveltejs/adapter-vercel': 2.1.1_@sveltejs+kit@1.8.5
@@ -562,8 +562,8 @@ packages:
       - supports-color
     dev: true
 
-  /@neoconfetti/svelte/1.0.0:
-    resolution: {integrity: sha512-SmksyaJAdSlMa9cTidVSIqYo1qti+WTsviNDwgjNVm+KQ3DRP2Df9umDIzC4vCcpEYY+chQe0i2IKnLw03AT8Q==}
+  /@neoconfetti/svelte/2.2.1:
+    resolution: {integrity: sha512-2Ts0Rxaf6clW2qG+AKhTwpl01AAyZEAe03XeuQ7Vp+qYIaM3ycuI94j546fmEkUxwACwGI3Zl2cZ/pncTuNcJg==}
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
