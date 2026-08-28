@@ -1,23 +1,25 @@
 <script lang="ts">
-    import { page } from "$app/stores"
+    import { page } from "$app/state"
+
+    let { children } = $props();
   </script>
-  
+
   <div>
     <header>
       <div class="signedInStatus">
         <p class="nojs-show loaded">
-          {#if $page.data.session}
-            {#if $page.data.session.user?.image}
+          {#if page.data.session}
+            {#if page.data.session.user?.image}
               <span
-                style="background-image: url('{$page.data.session.user.image}')"
+                style="background-image: url('{page.data.session.user.image}')"
                 class="avatar"
-              />
+              ></span>
             {/if}
             <span class="signedInText">
               <small>Signed in as</small><br />
               <strong
-                >{$page.data.session.user?.email ??
-                  $page.data.session.user?.name}</strong
+                >{page.data.session.user?.email ??
+                  page.data.session.user?.name}</strong
               >
             </span>
             <a href="/auth/signout" class="button" data-sveltekit-preload-data="off">Sign out</a>
@@ -34,7 +36,7 @@
         </ul>
       </nav>
     </header>
-    <slot />
+    {@render children()}
   </div>
   
   <style>
