@@ -1306,7 +1306,7 @@ packages:
       '@typescript-eslint/scope-manager': 5.53.0
       '@typescript-eslint/types': 5.53.0
       '@typescript-eslint/typescript-estree': 5.53.0_typescript@5.6.3
-      debug: 4.4.3
+      debug: 4.3.4
       eslint: 8.57.1
       typescript: 5.6.3
     transitivePeerDependencies:
@@ -1393,7 +1393,7 @@ packages:
       debug: 4.4.3
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.6.3
+      semver: 7.3.8
       tsutils: 3.21.0_typescript@5.6.3
       typescript: 5.6.3
     transitivePeerDependencies:
@@ -2903,7 +2903,7 @@ packages:
       array-union: 2.1.0
       dir-glob: 3.0.1
       fast-glob: 3.2.12
-      ignore: 5.2.4
+      ignore: 5.3.2
       merge2: 1.4.1
       slash: 3.0.0
     dev: true
