@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-vercel'
-import { vitePreprocess } from '@sveltejs/kit/vite'
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,7 +8,7 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter({ runtime: 'edge' }),
+		adapter: adapter(),
 		prerender: {
 			// /auth/* routes are served by the @auth/sveltekit handle hook at
 			// runtime, not by SvelteKit route files. The prerender crawler
@@ -18,12 +18,6 @@ const config = {
 			handleHttpError: ({ path }) => {
 				if (path.startsWith('/auth/')) return
 			}
-		}
-	},
-
-	vitePlugins: {
-		experimental: {
-			inspector: true
 		}
 	}
 }
